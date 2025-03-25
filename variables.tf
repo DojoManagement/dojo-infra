@@ -10,6 +10,6 @@ variable "region" {
   default = "sa-east-1"
 }
 
-variable "profile" {
-  default = "aikido"
-}
+#variable "profile" {
+#  default = "aikido"
+#}
