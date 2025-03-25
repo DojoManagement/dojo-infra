@@ -4,12 +4,12 @@ output "s3_bucket_name" {
 }
 
 
-output "lambda_arn" {
-  description = "ARN da função Lambda"
-  value       = [
-    aws_lambda_function.lambda_function.arn
-  ]
-}
+#output "lambda_arn" {
+#  description = "ARN da função Lambda"
+#  value       = [
+#    aws_lambda_function.lambda_function.arn
+#  ]
+#}
 
 output "api_gateway_url" {
   description = "URL da API Gateway"
