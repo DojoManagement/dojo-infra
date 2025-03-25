@@ -1,6 +1,5 @@
 provider "aws" {
   region  = var.region
-  profile = var.profile
 }
 
 #resource "aws_cloudwatch_log_group" "convert_log_group" {
