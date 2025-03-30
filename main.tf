@@ -1,7 +1,8 @@
-provider "aws" {
-  region  = var.region
-}
+module "infrastructure_stg" {
+  source = "git::git@github.com:DojoManagement/dojo-ft-modules.git//dojo-infra?ref=dojo-infra-0.0.1"
 
-#resource "aws_cloudwatch_log_group" "convert_log_group" {
-#  name = "/aws/lambda/${aws_lambda_function.lambda_function.function_name}"
-#}
+  project_name  = "dojo-management"
+  project_desc  = "Dojo Management"
+  region        = "sa-east-1"
+  env           = "stg"
+}
