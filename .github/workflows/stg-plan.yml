@@ -1,4 +1,4 @@
-name: Deploy Infrastructure to STG with Terraform
+name: Plan Infrastructure to STG with Terraform
 
 on:
   pull_request:

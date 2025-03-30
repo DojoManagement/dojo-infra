@@ -1,4 +1,4 @@
-name: Deploy Infrastructure to PRD with Terraform
+name: Plan Infrastructure to PRD with Terraform
 
 on:
   pull_request:
