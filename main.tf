@@ -1,4 +1,4 @@
-module "infrastructure_stg" {
+module "infrastructure" {
   source = "git::git@github.com:DojoManagement/dojo-ft-modules.git//dojo-infra?ref=dojo-infra-0.0.1"
 
   project_name  = "dojo-management"
