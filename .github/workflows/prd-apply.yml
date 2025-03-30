@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+env:
+  GITHUB_PAT: ${{ secrets.GH_PAT }}
+
 jobs:
   terraform:
     name: Setup Terraform
