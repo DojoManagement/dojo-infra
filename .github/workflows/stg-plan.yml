@@ -5,9 +5,6 @@ on:
     branches:
       - develop
 
-#env:
-#  TF_VAR_github_token: ${{ secrets.GH_PAT }}
-
 jobs:
   terraform:
     name: Setup Terraform
@@ -26,15 +23,7 @@ jobs:
 
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
-    
-#    - name: Configurar Git para acessar repositórios privados
-#      run: |
-#        git config --global url."https://x-access-token:${{ secrets.GH_PAT }}@github.com/".insteadOf "https://github.com/"
-#
-#    - name: Clonar repositório de módulos
-#      run: |
-#        git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/DojoManagement/dojo-ft-modules.git terraform-modules
-      
+ 
     - name: Terraform fmt
       id: fmt
       run: terraform fmt -check
