@@ -1,5 +1,5 @@
 module "infrastructure" {
-  source = "git@github.com:DojoManagement/dojo-ft-modules.git//dojo-infra?ref=dojo-infra-0.0.1"
+  source = "git::https://github.com:DojoManagement/dojo-ft-modules.git//dojo-infra?ref=dojo-infra-0.0.1"
 
   project_name  = "dojo-management"
   project_desc  = "Dojo Management"
