@@ -5,8 +5,8 @@ on:
     branches:
       - develop
 
-env:
-  TF_VAR_github_token: ${{ secrets.GH_PAT }}
+#env:
+#  TF_VAR_github_token: ${{ secrets.GH_PAT }}
 
 jobs:
   terraform:
@@ -26,6 +26,9 @@ jobs:
 
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
+    
+    - name: Configurar variável de ambiente para GitHub Token
+      run: echo "GITHUB_PAT=${{ secrets.GH_PAT }}" >> $GITHUB_ENV
         
     - name: Terraform fmt
       id: fmt
