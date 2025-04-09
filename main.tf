@@ -10,6 +10,10 @@ terraform {
   }
 }
 
+variable "env" {
+  default = ""
+  type    = string
+}
 
 module "infrastructure" {
   source = "git::https://github.com/DojoManagement/dojo-tf-modules.git//dojo-infra?ref=dojo-infra-0.0.2"
@@ -17,5 +21,5 @@ module "infrastructure" {
   project_name  = "dojo-management"
   project_desc  = "Dojo Management"
   region        = "sa-east-1"
-  env           = "stg"
+  env           = var.env
 }
