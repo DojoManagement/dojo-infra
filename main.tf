@@ -17,5 +17,5 @@ module "infrastructure" {
   project_name  = "dojo-management"
   project_desc  = "Dojo Management"
   region        = "sa-east-1"
-  env           = "stg"
+  env           = var.env
 }
