@@ -16,7 +16,7 @@ variable "env" {
 }
 
 module "infrastructure" {
-  source = "git::https://github.com/DojoManagement/dojo-tf-modules.git//dojo-infra?ref=dojo-infra-0.0.2"
+  source = "git::https://github.com/DojoManagement/dojo-tf-modules.git//dojo-infra?ref=dojo-infra-0.0.3"
 
   project_name  = "dojo-management"
   project_desc  = "Dojo Management"
